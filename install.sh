@@ -29,6 +29,13 @@ curl -O https://raw.githubusercontent.com/8manhere/botlb/main/botlb.sh
 curl -O https://raw.githubusercontent.com/8manhere/botlb/main/fix-x11.sh
 curl -O https://raw.githubusercontent.com/8manhere/botlb/main/botlb.desktop
 
+echo "set lokasi install"
+INSTALL_PATH="/home/$(whoami)/BOTLB"
+
+# Replace placeholder path di botlb.sh dan botlb.desktop
+sed -i "s|__INSTALL_PATH__|$INSTALL_PATH|g" botlb.sh
+sed -i "s|__INSTALL_PATH__|$INSTALL_PATH|g" botlb.desktop
+
 echo "[*] Install library Python"
 pip install --upgrade pip
 pip install -r requirements.txt
