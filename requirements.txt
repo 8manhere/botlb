@@ -1,0 +1,8 @@
+requests
+playwright
+pyautogui
+pyperclip
+gdown
+pandas
+openpyxl
+pyperclip
