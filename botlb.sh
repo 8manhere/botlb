@@ -1,5 +1,7 @@
 #!/bin/bash
-cd /home/$(whoami)/BOTLB
+
+# lokasi file
+cd __INSTALL_PATH__
 
 # Aktifkan X11
 ./fix-x11.sh
