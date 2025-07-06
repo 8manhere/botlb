@@ -2,9 +2,17 @@
 set -e
 
 echo "[*] Install Python & tools"
-sudo apt update && sudo apt install -y \
-  python3 python3-venv python3-pip curl \
-  wmctrl xdotool scrot python3-tk python3-dev
+
+sudo apt update
+sudo apt install -y python3
+sudo apt install -y python3-venv
+sudo apt install -y python3-pip
+sudo apt install -y curl
+sudo apt install -y wmctrl
+sudo apt install -y xdotool
+sudo apt install -y scrot
+sudo apt install -y python3-tk
+sudo apt install -y python3-dev
 
 TARGET_DIR="/home/$(whoami)/BOTLB"
 mkdir -p "$TARGET_DIR"
