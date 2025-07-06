@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=BOTLB Launcher
-Exec=/home/$(whoami)/BOTLB/botlb.sh
+Exec=__INSTALL_PATH__/botlb.sh
 Icon=utilities-terminal
 Terminal=true
 Type=Application
