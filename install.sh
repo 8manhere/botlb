@@ -1,6 +1,14 @@
 #!/bin/bash
 set -e
 
+# Cek dan install firefox-esr jika belum ada
+if ! command -v firefox-esr &> /dev/null; then
+    echo "[*] firefox-esr belum terpasang, memasang..."
+    sudo apt install -y firefox-esr
+else
+    echo "[✓] firefox-esr sudah terpasang, skip instalasi"
+fi
+
 echo "[*] Install Python & tools"
 
 sudo apt update
