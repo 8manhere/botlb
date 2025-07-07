@@ -1,5 +1,19 @@
 #!/bin/bash
 
+echo "[*] Download & install WhiteSur-Dark GTK Theme..."
+git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git --depth=1
+cd WhiteSur-gtk-theme
+./install.sh -t default -c dark
+cd ..
+rm -rf WhiteSur-gtk-theme
+
+echo "[*] Download & install WhiteSur Icon Pack..."
+git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git --depth=1
+cd WhiteSur-icon-theme
+./install.sh
+cd ..
+rm -rf WhiteSur-icon-theme
+
 echo "[*] Download dan set wallpaper..."
 INSTALL_PATH="/home/$(whoami)/BOTLB"
 mkdir -p "$INSTALL_PATH"
