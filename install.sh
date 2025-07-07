@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 
+# cek update jika ada
 sudo apt update
 
 # Cek dan install firefox-esr jika belum ada
