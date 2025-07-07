@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=BOTLB Launcher
+Name=BOTLB
 Exec=__INSTALL_PATH__/botlb.sh
 Icon=utilities-terminal
 Terminal=true
