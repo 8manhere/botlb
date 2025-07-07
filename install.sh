@@ -12,6 +12,28 @@ else
     echo "[✓] firefox-esr sudah terpasang, skip instalasi"
 fi
 
+DESKTOP_FILE=~/Desktop/firefox-esr.desktop
+
+if [[ -f "$DESKTOP_FILE" ]]; then
+    echo "[i] Shortcut Firefox-ESR sudah ada di Desktop. Lewat..."
+else
+    echo "[*] Buat shortcut Firefox-ESR di Desktop..."
+    cat <<EOF > "$DESKTOP_FILE"
+[Desktop Entry]
+Version=1.0
+Name=Firefox ESR
+Comment=Browser
+Exec=firefox-esr
+Icon=firefox-esr
+Terminal=false
+Type=Application
+Categories=Network;WebBrowser;
+EOF
+
+    chmod +x "$DESKTOP_FILE"
+    echo "[✓] Shortcut Firefox-ESR ditambahkan ke Desktop!"
+fi
+
 echo "[*] Install Python & tools"
 sudo apt install -y python3
 sudo apt install -y python3-venv
@@ -55,30 +77,3 @@ cp botlb.desktop ~/Desktop/
 chmod +x ~/Desktop/botlb.desktop
 
 echo "[✓] BOTLB siap dijalankan dari Desktop!"
-
-echo "[*] Download & install WhiteSur-Dark GTK Theme..."
-git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git --depth=1
-cd WhiteSur-gtk-theme
-./install.sh -t default -c dark
-cd ..
-rm -rf WhiteSur-gtk-theme
-
-echo "[*] Download & install WhiteSur Icon Pack..."
-git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git --depth=1
-cd WhiteSur-icon-theme
-./install.sh
-cd ..
-rm -rf WhiteSur-icon-theme
-
-echo "[*] Terapkan theme & icon di XFCE..."
-xfconf-query -c xsettings -p /Net/ThemeName -s "WhiteSur-Dark"
-xfconf-query -c xsettings -p /Net/IconThemeName -s "WhiteSur"
-
-echo "[*] Download dan set wallpaper..."
-mkdir -p ~/Pictures
-wget -q -O ~/Pictures/wallpaper.jpg https://raw.githubusercontent.com/8manhere/botlb/main/macOS-Catalina-Dark-Mode.jpg
-
-# Terapkan wallpaper ke semua monitor di XFCE
-for i in $(xfconf-query -c xfce4-desktop -l | grep image-path); do
-    xfconf-query -c xfce4-desktop -p "$i" -s "$HOME/Pictures/wallpaper.jpg"
-done
