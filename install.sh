@@ -4,6 +4,15 @@ set -e
 # cek update jika ada
 sudo apt update
 
+# Set timezone
+echo "Setting timezone ke Asia/Jakarta..."
+sudo ln -sf /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
+sudo dpkg-reconfigure -f noninteractive tzdata
+
+# Tampilkan waktu
+echo "Waktu sekarang:"
+date
+
 # Cek dan install firefox-esr jika belum ada
 if ! command -v firefox-esr &> /dev/null; then
     echo "[*] firefox-esr belum terpasang, memasang..."
