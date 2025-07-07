@@ -9,7 +9,7 @@ def move_console():
         output = subprocess.check_output(["wmctrl", "-l"]).decode()
         lines = output.splitlines()
         for line in lines:
-            if "Terminal" in line or "botlogbook" in line:
+            if "Terminal" in line or "botlogbook" in line or "botlb.sh" in line:
                 window_id = line.split()[0]
                 subprocess.call(["wmctrl", "-i", "-r", window_id, "-e", "0,1200,800,500,230"])
                 return
