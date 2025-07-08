@@ -1,8 +1,7 @@
 # BOTLB
 wahai kaum kaum penikmat mi instan silahkan pakai ini untuk mempermudah hidup kalian, dibuat oleh nopa admin
 
-## tutor instalasi
-program ini hanya berjalan pada sistem linux debian
+## tutor instalasi linux deb
 
 buka terminal dan paste perintah berikut
 
