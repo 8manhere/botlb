@@ -1,7 +1,7 @@
 # BOTLB
 wahai kaum kaum penikmat mi instan silahkan pakai ini untuk mempermudah hidup kalian, dibuat oleh nopa admin
 
-## tutor instalasi linux deb
+## tutor instalasi di linux deb
 
 buka terminal dan paste perintah berikut
 
