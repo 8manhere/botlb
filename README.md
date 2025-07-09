@@ -7,9 +7,12 @@ buka terminal dan paste perintah berikut
 
 ```bash
 curl -s https://raw.githubusercontent.com/8manhere/botlb/main/install.sh | bash
+```
 
 tunggu sampai proses selesai, gunakan internet yg stabil.
 
 ## opsional install tema
 
-> `curl -s https://raw.githubusercontent.com/8manhere/botlb/main/install2.sh | bash`
+```bash
+curl -s https://raw.githubusercontent.com/8manhere/botlb/main/install2.sh | bash
+```
