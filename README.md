@@ -1,5 +1,5 @@
 # BOTLB
-wahai kaum kaum penikmat mi instan silahkan pakai ini untuk mempermudah hidup kalian, dibuat oleh nopa admin
+wahai kaum kaum penikmat mi instan silahkan pakai ini untuk mempermudah hidup kalian.
 
 ## tutor instalasi di linux deb
 
