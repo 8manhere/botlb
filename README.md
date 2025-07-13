@@ -10,7 +10,7 @@ Bisa di gunakan untuk:
 
 Download file setup [di sini](https://tinyurl.com/botlogbook) lalu ekstrak.
 
-Tutor install dan pemakaian tanyakan [admin](https://discord.com/channels/1393833236937052223/1393833541795844096) :v
+Tutor install dan pemakaian tanyakan [admin](https://discord.gg/WcBszGT3) :v
 
 ## 2. instalasi di linux deb
 
@@ -26,7 +26,7 @@ opsional install tema
 curl -s https://raw.githubusercontent.com/8manhere/botlb/main/install2.sh | bash
 ```
 
-Tutor install dan pemakaian tanyakan [admin](https://discord.com/channels/1393833236937052223/1393833541795844096) :v
+Tutor install dan pemakaian tanyakan [admin](https://discord.gg/WcBszGT3) :v
 
 ## 3. Installasi di android
 
@@ -38,4 +38,4 @@ Install aplikasi berikut:
 3. Pydroid3
 4. Macrodroid
 
-Tutor install dan pemakaian tanyakan [admin](https://discord.com/channels/1393833236937052223/1393833541795844096) :v
+Tutor install dan pemakaian tanyakan [admin](https://discord.gg/WcBszGT3) :v
